@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 # ─────────────────────────────────────────────
 # ▶  VARIABLE PRINCIPAL: cambia aquí la imagen
 # ─────────────────────────────────────────────
-IMAGEN = "SENTINEL2_POST_misiones.tif"
+IMAGEN = "SENTINEL2_PRE_patagonia.tif"
 # ─────────────────────────────────────────────
 
 # Permite sobrescribir con argumento de línea de comandos
@@ -335,4 +335,3 @@ fila("Proyección",     "WGS 84 — EPSG:4326 (geográfico)")
 fila("Mosaico/tiles",  f"Tiles internos de {tags[322].value if 322 in tags else '?'}×{tags[323].value if 323 in tags else '?'} píxeles")
 
 print(f"\n{BOLD}{'═'*62}{RESET}\n")
-
